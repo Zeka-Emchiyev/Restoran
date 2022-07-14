@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'DERSNavbar',
+  name: 'Navbar',
 
   data() {
     return {

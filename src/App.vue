@@ -22,7 +22,6 @@ export default {
   mounted() {
     axios.get('orders.json')
       .then(response => {
-        console.log(response)
         this.$store.commit('setOrders', response.data.orders)
       })
       .catch(e => {

@@ -108,7 +108,7 @@
 <script>
 // import bootstrap from 'bootstrap';
 export default {
-    name: 'DERSOrderId',
+    name: 'OrderId',
 
     data() {
         return {
@@ -179,9 +179,10 @@ export default {
         },
         submitOrderItems() {
             console.log(this.sumOfOrder)
-            this.order.price = this.sumOfOrder
+            this.order.price = parseInt(this.sumOfOrder)
             this.$store.commit('submitOrderItems', this.order)
             this.$router.push('/orders')
+
 
         }
 
